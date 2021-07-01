@@ -1,7 +1,7 @@
 import Vue from "vue"
 import {DateTime} from "luxon";
 
-import {formatDateTime, isStringNullOrBlank} from "@app/services/Util.js"
+import {formatDateTime} from "@app/services/Util.js"
 
 Vue.filter("showLink", function (show) {
     let name = show.name.replace(" ", "+");

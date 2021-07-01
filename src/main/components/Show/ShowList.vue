@@ -14,6 +14,7 @@
             <ul v-if="shows.length > 0">
                 <li
                     v-for="show in shows"
+                    :key="show.id"
                     class="box"
                 >
                     <span class="subtitle">{{ show.name }}</span>

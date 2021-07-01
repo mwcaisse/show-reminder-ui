@@ -2,7 +2,7 @@
     <div>
         <section class="section">
             <app-add-show />
-            <div class="pt-3"></div>
+            <div class="pt-3" />
             <app-show-list />
         </section>
     </div>

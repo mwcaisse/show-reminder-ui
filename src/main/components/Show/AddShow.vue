@@ -31,6 +31,7 @@
             <ul v-if="searchResults.length > 0">
                 <li
                     v-for="result in searchResults"
+                    :key="result.id"
                     class="box"
                 >
                     <div class="subtitle">
