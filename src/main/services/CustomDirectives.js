@@ -19,8 +19,5 @@ function formatDateFilter(value, formatString) {
 }
 
 Vue.filter("formatDate", function (value, formatString) {
-    if (isStringNullOrBlank(formatString)) {
-        formatString = "YYYY-MM-DD";
-    }
     return formatDateFilter(value, formatString);
 });

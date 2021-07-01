@@ -20,10 +20,11 @@ function isStringNullOrBlank(string) {
 
 function formatDateTime(date, formatString) {
     if (typeof formatString === "undefined") {
-        formatString = "YYYY-MM-DD";
+        formatString = "yyyy-MM-dd";
     }
-    if (DateTime.isDateTime(date) && date.isValid()) {
-        return date.format(formatString);
+    console.dir(date);
+    if (DateTime.isDateTime(date) && date.isValid) {
+        return date.toFormat(formatString);
     }
     return "";
 }

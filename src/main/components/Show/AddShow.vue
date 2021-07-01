@@ -35,7 +35,7 @@
                 >
                     <div class="subtitle">
                         <span>{{ result.name }}</span>
-                        <span v-if="result.firstAired">({{ result.firstAired | formatDate("YYYY") }})</span>
+                        <span v-if="result.firstAired">({{ result.firstAired | formatDate("yyyy") }})</span>
                         <span class="is-pulled-right">
                             <app-icon
                                 icon="plus"

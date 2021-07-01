@@ -39,14 +39,14 @@
                             <div class="field">
                                 <label class="label">First Aired</label>
                                 <div class="control">
-                                    <span>{{ show.firstAiredDate | formatDate }}</span>
+                                    <span>{{ show.firstAiredDate | formatDate("DDDD") }}</span>
                                 </div>
                             </div>
                             <div class="field">
                                 <label class="label">Last Aired</label>
                                 <div class="control">
                                     <span v-if="show.lastEpisode === null">N/A</span>
-                                    <span v-else>{{ show.lastEpisode.airDate | formatDate }}</span>
+                                    <span v-else>{{ show.lastEpisode.airDate | formatDate("DDDD") }}</span>
                                     <br>
                                     <span v-if="show.lastEpisode !== null">S{{ show.lastEpisode.seasonNumber }}E{{ show.lastEpisode.episodeNumber }}</span>
                                 </div>
@@ -63,7 +63,7 @@
                                 <label class="label">Airs Next</label>
                                 <div class="control">
                                     <span v-if="show.nextEpisode === null">N/A</span>
-                                    <span v-else>{{ show.nextEpisode.airDate | formatDate("dddd, MMMM D, YYYY") }}</span>
+                                    <span v-else>{{ show.nextEpisode.airDate | formatDate("DDDD") }}</span>
                                     <br>
                                     <span v-if="show.nextEpisode !== null">S{{ show.nextEpisode.seasonNumber }}E{{ show.nextEpisode.episodeNumber }}</span>
                                 </div>
